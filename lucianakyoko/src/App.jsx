@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Badge from './pages/Badge';
 import Portfolio from './pages/Portfolio';
+import ProjectFull from './pages/ProjectFull';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={ <Home /> } />
         <Route path='badge' element={ <Badge /> }/>
         <Route path='portfolio' element={ <Portfolio /> }/>
+        <Route path='portfolio/:projectId' element={ <ProjectFull />} />
       </Routes>
     </Router>
   );
