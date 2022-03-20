@@ -12,6 +12,7 @@ import Game from './pages/Game';
 import Bootcamps from './pages/Bootcamps';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='bootcamps' element={ <Bootcamps /> }/>
         <Route path='sobre' element={ <About /> } />
         <Route path='contato' element={ <Contact /> } />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
     </Router>
   );
