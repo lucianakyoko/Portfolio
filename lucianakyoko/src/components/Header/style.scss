@@ -1,0 +1,32 @@
+@import '../../assets/styles/variables.scss';
+
+.header {
+  width: 100%;
+  padding: 1.8rem 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+
+  background-color: $color-black;
+  border-bottom: 1px solid $color-purple;
+
+  &__close-btn i{
+    font-size: 2rem;
+    color: $color-petrol;
+    transition: $transition;
+  }
+
+  &__close-btn i:hover {
+    color: $color-petrol-transparent;
+    cursor: pointer;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $color-medium-gray;
+  }
+}
