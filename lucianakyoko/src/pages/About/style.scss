@@ -1,0 +1,77 @@
+@import '../../assets/styles/variables.scss';
+
+.about {
+  width: 100%; 
+
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  &__container {
+    width: 90%; height: 90%;
+    margin: 1.8rem auto;
+    padding: 2rem;
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  
+    background-color: $color-black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(16px);
+    border-radius: $radius;
+    border: 1px solid $color-purple;
+  }
+
+  &__paragraph-dark {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 40px;
+    color: $color-medium-gray;
+    letter-spacing: 0.16em;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .12em;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 24px;
+    color: $color-medium-gray;
+    margin-bottom: 2.4rem;
+  }
+  .darker {
+    font-weight: 700;
+    color: $color-light-gray;
+  }
+  
+  &__button {
+    margin: auto;
+  }
+}
+
+
+@media screen and (min-width: 743px) {
+  .about__container {
+    width: 85%; height: 75vh;
+    padding: 2rem 8rem;
+  }
+
+  .about_paragraph {
+    font-size: 2rem;
+    letter-spacing: .18em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about__container {
+    width: 650px; height: 500px;
+    padding: 2rem 4rem;
+  }
+
+  .about_paragraph {
+    font-size: 2rem;
+    letter-spacing: .18em;
+  }
+}
