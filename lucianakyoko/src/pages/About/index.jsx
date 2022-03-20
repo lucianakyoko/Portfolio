@@ -16,7 +16,7 @@ const About = () => {
         <p className="about__paragraph-dark">Atualmente...</p>
         <p className='about__paragraph'>estou dedicada aos estudos de <span className='darker'>React</span> e <span className='darker'>Next.js</span>. Amo o que faço e estou altamente motivada para colaborar em um projeto.</p>
 
-        <a href='/about/resume' className='about__button'>
+        <a href='../../../public/files/cv_lucianakyoko.pdf' className='about__button' type='application/pdf' download='cv_lucianakyoko.pdf'>
           <Button title="fazer downloado do currículo" icon="fas fa-file-download" btnName="Currículo"/>
         </a>
       </div>
