@@ -1,0 +1,14 @@
+.portfolio-page {
+  width: 100%;
+}
+
+.portfolio__container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+
+  margin-top: 4rem;
+  padding: 2.4rem;
+}
