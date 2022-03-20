@@ -1,0 +1,52 @@
+@import '../../../assets/styles/variables.scss';
+
+.textarea {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  padding: 0 .8rem;
+}
+
+.textarea__label {
+  color: $color-medium-gray;
+  letter-spacing: 0.2em;
+  font-size: 1.6rem;
+  padding: 1.2rem .8rem;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: all .2s ease-in-out;
+}
+
+.textarea__textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid $color-medium-gray;
+  outline: none;
+  
+  padding: 1.2rem .8rem;
+  color: $color-medium-gray;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: $font-family-secondary;
+  transition: all .2s ease-in-out;
+}
+
+.textarea__textarea:focus,
+.textarea__textarea:valid {
+  border-bottom: 2px solid $color-purple;
+}
+
+
+.textarea__textarea:focus ~ label,
+.textarea__textarea:valid ~ label {
+  transform: translateY(-2.2rem);
+  font-size: 1.2rem;
+  color: $color-purple;
+}
