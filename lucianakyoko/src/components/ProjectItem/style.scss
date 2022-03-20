@@ -1,0 +1,55 @@
+@import '../../assets/styles/variables.scss';
+
+.project-item__container {
+  width: 360px;
+  height: 200px;
+
+  position: relative;
+}
+
+.project-item__image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 4px;
+}
+
+.project-item__title-box {
+  width: 156px;
+  height: 220px;
+  padding-left: 2rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: .8rem;
+
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  color: $color-black;
+
+  border-radius: 4px;
+  background-color: $color-petrol-transparent;
+  transition: all .4s ease;
+}
+
+.project-item__title-box:hover {
+  background-color: $color-petrol;
+  cursor: pointer;
+  color: $color-white;
+}
+
+.project-item__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-item__subtitle {
+  font-family: $font-family-secondary;
+  font-size: 1.6rem;
+  letter-spacing: .2em;
+}
