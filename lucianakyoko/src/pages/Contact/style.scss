@@ -1,0 +1,99 @@
+@import '../../assets/styles/variables.scss';
+
+.contact-page {
+  width: 100%;
+
+  background-color: #000;
+  
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.contact__container {
+  width: 94%;
+  margin: 18px auto;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+  background-color: $color-black;
+  border: 1px solid $color-purple-transparent;
+
+  border-radius: $radius;
+  position: relative;
+}
+
+.contact__social {
+  padding: .8rem 2.4rem;
+
+  position: relative;
+}
+.contact__social::after {
+  content: '';
+  width: 80px;
+  height: .2px;
+  margin-top: .8rem;
+  background-color: $color-purple;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact__paragraph {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.16em;
+  margin-bottom: 1.8rem;
+  color: $color-medium-gray;
+}
+
+/* RESPONSIVE: */
+
+/* Mobile-big/ tablet - PORTRAIT */
+@media screen and (min-width: 424px){
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contact__social {
+    margin-bottom: 4rem;
+  }
+  
+  .contact__paragraph {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 743px) {
+  .contact__container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  
+  .contact__social {
+    width: 40%;
+    margin-bottom: 0;
+    padding: .8rem ;
+  }
+
+  .contact__form {
+    width: 70%;
+    padding: .8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__container {
+    width: 820px;
+    margin-top: 3.6rem;
+  }
+
+  .contact__paragraph {
+    line-height: 28px;
+  }
+}

@@ -11,6 +11,7 @@ import ProjectFull from './pages/ProjectFull';
 import Game from './pages/Game';
 import Bootcamps from './pages/Bootcamps';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='jogos' element={ <Game /> } />
         <Route path='bootcamps' element={ <Bootcamps /> }/>
         <Route path='sobre' element={ <About /> } />
+        <Route path='contato' element={ <Contact /> } />
       </Routes>
     </Router>
   );
