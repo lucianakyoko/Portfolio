@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Badge from './pages/Badge';
 import Portfolio from './pages/Portfolio';
 import ProjectFull from './pages/ProjectFull';
+import Game from './pages/Game';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='badge' element={ <Badge /> }/>
         <Route path='portfolio' element={ <Portfolio /> }/>
         <Route path='portfolio/:projectId' element={ <ProjectFull />} />
+        <Route path='jogos' element={ <Game /> } />
       </Routes>
     </Router>
   );
