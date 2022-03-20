@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
 import Button from '../Button';
+import SentMessage from './SentMessage';
 
 import './style.scss';
 import emailjs from 'emailjs-com';
 
 
 const ContactForm = () => {
+  const [result, setResult] = useState(false);
+
   function sendEmail(event) {
     event.preventDefault();
 
     emailjs
     .sendForm('service_nc66yny', 'template_056ce4k', event.target, 'W-mMediDf1ExEvTv7')
+    // .then(result => console.log(result), (error) => console.log(error, error.text));
+
+    event.target.reset();
+    setResult(true);
   }
 
   return (
@@ -22,6 +29,8 @@ const ContactForm = () => {
       <Textarea label="*Mensagem:" id="message" name='message' required/>
  
       <Button icon='fas fa-paper-plane' btnName='Enviar mensagem' title='Enviar mensagem'/> 
+
+      { result ? <SentMessage /> : null }
     </form>
   )
 }

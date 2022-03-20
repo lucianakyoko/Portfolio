@@ -1,0 +1,39 @@
+@import '../../../assets/styles/variables.scss';
+
+.sent-message {
+  width: 100%;
+  height: 100%;
+
+  background-color: $color-black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+}
+
+.message-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 18px;
+
+  display: flex;
+  gap: 1.8rem;
+
+  .message-success {
+    color: $color-success;
+    letter-spacing: .16em;
+    font-size: 1.8rem;
+  }
+
+  .message {
+    color: $color-medium-gray;
+    letter-spacing: .12em;
+    font-family: $font-family-secondary;
+    font-size: 1.8rem;
+  }
+}
+
