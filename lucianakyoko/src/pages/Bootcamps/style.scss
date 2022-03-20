@@ -1,0 +1,42 @@
+@import '../../assets/styles/variables.scss';
+
+.bootcamps-page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 2;
+}
+
+.message-box {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message-title {
+  width: 100%;
+  padding: 1.8rem;
+
+  text-align: center;
+  font-size: 2.4rem;
+  color: $color-medium-gray;
+}
+
+.message-paragraph {
+  font-size: 1.6rem;
+  letter-spacing: .1em;
+  color: $color-light-gray;
+}
+
+
