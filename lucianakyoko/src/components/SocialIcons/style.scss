@@ -1,11 +1,8 @@
 @import '../../assets/styles/variables.scss';
+@import '../../assets//styles/template.scss';
 
 .social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
+  @include flex-center(1rem);
   padding: .8rem;
 
   &__icon {

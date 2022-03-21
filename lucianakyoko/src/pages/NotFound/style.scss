@@ -1,4 +1,5 @@
 @import '../../assets/styles/variables.scss';
+@import '../../assets/styles/template.scss';
 
 .notfound-page {
   width: 100%;
@@ -18,11 +19,8 @@
   width: 80%;
   margin:auto;
 
-  display: flex;
+  @include flex-center(4rem);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
 }
 
 .notfound-title {

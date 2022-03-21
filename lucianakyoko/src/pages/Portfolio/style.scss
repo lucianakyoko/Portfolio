@@ -1,13 +1,11 @@
+@import '../../assets/styles/template.scss';
 .portfolio-page {
   width: 100%;
 }
 
 .portfolio__container {
-  display: flex;
+  @include flex-center(4.8rem);
   flex-wrap: wrap-reverse;
-  align-items: center;
-  justify-content: center;
-  gap: 4.8rem;
 
   margin-top: 4rem;
   padding: 2.4rem;

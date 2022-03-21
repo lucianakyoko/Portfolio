@@ -1,4 +1,5 @@
 @import '../../assets/styles/variables.scss';
+@import '../../assets//styles//template.scss';
 
 .badge-front {
   width: 100%; height: 100%;
@@ -7,20 +8,17 @@
   backface-visibility: hidden;
   
   &__image-section {
+    @include flex-center(1rem);
     width: 100%;
-    background: linear-gradient(180deg, rgba(70, 44, 44, 0.8) 0%, rgba(68, 138, 166, 0.8) 100%), url(../../assets/images/polygon.svg);
+    padding: 6rem 0 2.4rem;
+
+    background: linear-gradient(180deg, rgba(214, 114, 114, 0.8) 0%, rgba(68, 138, 166, 0.8) 100%), url(../../assets/images/polygon.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   
     box-shadow: inset 0px 4px 12px rgba(221, 78, 190, 0.5);
     border-radius: $radius $radius 0 0;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    padding: 6rem 0 2.4rem;
   }
 
   &__data-section {
@@ -32,8 +30,8 @@
     &__data-office, 
     &__data-paragraph {
       font-size: 1.6rem;
-      text-align: center;
       letter-spacing: 0.16em;
+      text-align: center;
     }
 
     &__data-office,
@@ -42,20 +40,22 @@
     }
 
     &__data-name {
-      text-transform: uppercase;
-      font-weight: 700;
       color: $color-light-gray;
+      font-weight: 700;
+      text-transform: uppercase;
     }
   
     &__data-office {
-      font-weight: 500;
-      margin-top: 2.8rem;
       color: $color-white;
+      font-weight: 500;
+
+      margin-top: 2.8rem;
     }
   
     &__data-paragraph {
-      font-family: $font-family-secondary;
       color: $color-medium-gray;
+      font-family: $font-family-secondary;
+      
       margin-top: 0.8rem;
     }
   

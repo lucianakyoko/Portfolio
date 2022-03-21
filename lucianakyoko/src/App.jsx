@@ -14,10 +14,9 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
-
 function App() {
   return (
-    <Router>
+    <Router className='teste'>
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='badge' element={ <Badge /> }/>

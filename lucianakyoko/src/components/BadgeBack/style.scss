@@ -25,11 +25,11 @@
   &__title {
     width: 100%;
   
+    color: $color-light-gray;
     font-size: 1.8rem;
-    line-height: 23px;
     font-weight: 700;
     letter-spacing: 0.16em;
-    color: $color-light-gray;
+    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -44,12 +44,13 @@
 
   &__skill-section .skill {
     width: 50%;
+    margin-top: .8rem;
+
+    color: $color-light-gray;
     font-family: $font-family-secondary;
     font-size: 1.6rem;
-    color: $color-light-gray;
   
     position: relative;
-    margin-top: .8rem;
   }
 
   &__skill-section .skill::before {
