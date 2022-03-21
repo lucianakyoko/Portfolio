@@ -31,12 +31,12 @@ const ProjectFull = () => {
         </div>
 
         <div className='project-details__link-box'>
-          <a className='project-details__link' href={project.github} target="_blank" title="Acesse o código fonte deste projeto">
+          <a className='project-details__link' href={project.github} target="_blank"  rel="noreferrer" title="Acesse o código fonte deste projeto">
             <i className="fab fa-github"></i>
             Código fonte
           </a>
           
-          <a className='project-details__link' href={project.link} target="_blank" title='Acesse a página deste projeto'>
+          <a className='project-details__link' href={project.link} target="_blank"  rel="noreferrer" title='Acesse a página deste projeto'>
             <i className="fas fa-link"></i>
             Link da página
           </a>

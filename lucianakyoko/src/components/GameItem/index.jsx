@@ -14,11 +14,11 @@ const GameItem = () => {
 
     const id = event.target.id;
 
-    if(id == 'game01') {
+    if(id === 'game01') {
       setGameId('game01');
-    } else if( id == 'game02') {
+    } else if( id === 'game02') {
       setGameId('game02');
-    } else if(id == 'game03') {
+    } else if(id === 'game03') {
       setGameId('game03');
     }
   }
