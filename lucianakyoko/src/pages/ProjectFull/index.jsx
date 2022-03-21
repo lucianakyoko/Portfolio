@@ -15,8 +15,6 @@ const ProjectFull = () => {
   const {projectId} = useParams();
   const project = getProjects().find(item => item.id === projectId);
 
-
-
   return (
  
     <main className='project__container'>
