@@ -4,19 +4,23 @@ import './style.scss';
 import { getProjects } from '../../datas/projects.js'
 
 import Pulse from '../../components/Pulse';
+import changeTabTitle from '../../utils/changeTabTitle';
 
 const ProjectFull = () => {
+  changeTabTitle('Luciana Kyoko | Projeto');
+  
   const [active, setActive] = React.useState(true);
   const handleClick = () => setActive(!active);
 
   const {projectId} = useParams();
   const project = getProjects().find(item => item.id === projectId);
 
+
+
   return (
  
     <main className='project__container'>
       <div className='project-image__box'>
-        
         <img className='project-image' src={`../images/projects/${project.image}`} alt="Screenshot do projeto" />
       </div>
 

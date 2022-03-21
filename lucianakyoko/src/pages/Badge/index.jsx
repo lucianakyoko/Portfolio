@@ -5,9 +5,12 @@ import Header from '../../components/Header';
 import BadgeFront from '../../components/BadgeFront';
 import BadgeBack from '../../components/BadgeBack';
 import Pulse from '../../components/Pulse';
+import changeTabTitle from '../../utils/changeTabTitle';
 
 
 const Badge = () => {
+  changeTabTitle('Luciana Kyoko | Badge');
+  
   const [active, setActive] = React.useState(false);
   
   function handleClick() {

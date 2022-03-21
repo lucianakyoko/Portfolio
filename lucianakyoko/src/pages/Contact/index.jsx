@@ -4,8 +4,10 @@ import Header from '../../components/Header';
 import ContactForm from '../../components/ContactForm';
 
 import './style.scss';
+import changeTabTitle from '../../utils/changeTabTitle';
 
 const Contact = () => {
+  changeTabTitle('Luciana Kyoko | Contato');
   return (
     <main className='contact-page'>
       <Header pageName='Contato'/>

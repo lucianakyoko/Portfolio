@@ -3,9 +3,12 @@ import './style.scss';
 import RetroBackground from '../../components/RetroBackground';
 import Button from '../../components/Button';
 import { Link } from 'react-router-dom';
+import changeTabTitle from '../../utils/changeTabTitle';
 
 
 const NotFound = () => {
+  changeTabTitle('Luciana Kyoko | Front-end Developer');
+  
   return (
     <main className='notfound-page'>
       <div className='notfound-container'>

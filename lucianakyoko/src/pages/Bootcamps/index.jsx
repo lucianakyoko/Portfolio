@@ -3,8 +3,10 @@ import './style.scss';
 import RetroBackground from '../../components/RetroBackground';
 
 import Header from '../../components/Header';
+import changeTabTitle from '../../utils/changeTabTitle';
 
 const Bootcamps = () => {
+  changeTabTitle('Luciana Kyoko | Bootcamps')
   return (
     <main className='bootcamps-page'>
       <Header pageName='Bootcamps'/>
