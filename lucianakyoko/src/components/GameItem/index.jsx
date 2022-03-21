@@ -27,7 +27,7 @@ const GameItem = () => {
     <div className='game-container'>
       <ul className='game__overlay'>
         {games.map(game => (
-          <li key={game.id} id={game.id} className={game.id == gameId ? 'game__overlay-inner active' : 'game__overlay-inner' }>
+          <li key={game.id} id={game.id} className={game.id === gameId ? 'game__overlay-inner active' : 'game__overlay-inner' }>
             <img src={`../images/games/${game.image}`} className='game__image' alt="Screenshot da tela do jogo" />
             <div className='game__details'>
               <h2 className='game__title'>{game.title}</h2>
@@ -45,7 +45,7 @@ const GameItem = () => {
         <ul className='game__navigation-list'>
           {games.map(game => (
             <li key={game.id} className='game__navigation-item'>
-              <p id={game.id} onClick={handleClick} className={game.id == gameId ? 'game__navigation-title active': 'game__navigation-title'} href={game.title}>
+              <p id={game.id} onClick={handleClick} className={game.id === gameId ? 'game__navigation-title active': 'game__navigation-title'} href={game.title}>
                 {game.title}
               </p>
             </li>
